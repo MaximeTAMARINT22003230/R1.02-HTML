@@ -1,73 +1,89 @@
-header{
-    text-align: center;
-}
-
 body {
     background-image: url(fond-fixe-pc.jpg);
+    background-position: center;
     background-size: 100%;
     background-attachment: fixed;
-    margin: 0;
+    padding-top: 65px;
+    scroll-behavior: smooth;
 }
+
 
 footer {
     text-align: center;
+    color: white;
+    font-size: 80%;
 }
 
-.navbar{
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgb(0, 0, 0);
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    width: 100%;
 }
 
-.icon{
+.navbar img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.icon {
     fill: rgb(255, 0, 0);
     cursor: pointer;
 }
 
-.navbar input, .nav-menu, .dropdown{
+.navbar input,
+.nav-menu,
+.dropdown {
     display: none;
+
 }
 
-[id^=btn]:checked + ul{
+[id^=btn]:checked+ul {
     display: block;
 }
 
-.nav-menu{
+.nav-menu {
     background-color: rgb(0, 0, 0);
     position: absolute;
     top: 70px;
     left: 0;
     right: 0;
+    ;
 }
 
-.nav-item a, .drop-item a, .show{
+.nav-item a,
+.drop-item a,
+.show {
     color: white;
     text-decoration: none;
     line-height: 25px;
-    font-size: 1.6rem;
+    font-size: 150%;
 }
 
-.nav-menu a:hover, .show:hover{
+.nav-menu a:hover,
+.show:hover {
     color: red;
 }
 
-@media screen and (min-width: 768px){
-    .icon{
+@media screen and (min-width: 768px) {
+    .icon {
         display: none;
     }
-    .nav-menu{
+
+    .nav-menu {
         display: initial;
         position: static;
     }
-    .nav-item{
+
+    .nav-item {
         display: inline-block;
         margin-left: 20px;
         position: relative;
     }
-    .dropdown{
+
+    .dropdown {
         position: absolute;
         background-color: black;
         top: 70px;
@@ -77,29 +93,41 @@ footer {
     }
 
 }
+
 h1 {
     color: white;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 200%;
     line-height: 25px;
 }
 
 h3 {
     color: white;
     align-items: center;
-    font-size: 1.3rem;
-    line-height: 25px;
+    padding-left: 1%;   
 }
 
-h6,h4 {
+p {
     color: white;
-}
-
-blockquote {
-    color: white;
-    font-size: 1.2rem;
+    padding-left: 2%;
 }
 
 a {
     color: red;
+}
+
+.retour{
+    height: 50px;
+    
+}
+
+.botButton{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+#upArrow{
+    width: 50px;
+    height: 50px;
 }
