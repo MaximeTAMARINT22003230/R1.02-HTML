@@ -3,15 +3,14 @@ header{
 }
 
 body {
-    background-image: url(fond.jpg);
+    background-image: url(fond-fixe-pc.jpg);
     background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 footer {
     text-align: center;
-}
-body{
-    margin: 0;
 }
 
 .navbar{
@@ -47,8 +46,8 @@ body{
 .nav-item a, .drop-item a, .show{
     color: white;
     text-decoration: none;
-    line-height: 70px;
-    font-size: 1.2rem;
+    line-height: 25px;
+    font-size: 1.6rem;
 }
 
 .nav-menu a:hover, .show:hover{
@@ -78,17 +77,27 @@ body{
     }
 
 }
-h1,h2 {
+h1 {
     color: white;
     align-items: center;
+    font-size: 1.8rem;
+    line-height: 25px;
 }
 
-h6,h3,h4 {
+h3 {
+    color: white;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+h6,h4 {
     color: white;
 }
 
 blockquote {
     color: white;
+    font-size: 1.2rem;
 }
 
 a {
