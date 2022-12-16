@@ -122,10 +122,15 @@ a {
 }
 
 .botButton{
-    position: absolute;
-    bottom: 0;
-    right: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
 }
+
 
 #upArrow{
     width: 50px;
