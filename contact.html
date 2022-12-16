@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--=====| declaration des feuille de style utilise et information sur du site|=====-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="site sur Phasmophobia">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Maxime TAMARIN et Axel ROUBAUD">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="phasmo.ico">
+
+    <!--insertion du favicon-->
+    <title> Projet R1.02 sur Phasmophobia </title>
+    
+    <!--nomme la page-->
+    <meta author="Maxime TAMARIN et Axel ROUBAUD" charset="utf-8">
+</head>
+
+<!--=====| Barre de navigation |=====-->
+
+<body>
+    <nav class="navbar">
+
+        <!--nom de la classe-->
+        <img src="logo-phasmo-pc.png"></a>
+        
+        
+        <!--logo de phasmophobia-->
+        <input type="checkbox" id="btn">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">Presentation du jeux </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Gameplay</a>
+            </li>
+            <li class="nav-item">
+                <a href="objet.html">Objet</a>
+            </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+    </nav>
+
+
+    <!--=====| Formulaire |=====-->
+
+    <form id="form" action="#" >
+        <p>
+        <label for="prenom">Prénom</label>
+        <input id="prenom" type="text" name="prenom" value=" ">
+
+        <label for="nom">Nom</label>
+        <input id="nom" type="text" name="nom" value=" ">
+
+        <select name="sexe">
+        <option>choix</option>
+        <option>homme</option>
+        <option>femme</option>
+        </select> <br> <br>
+
+        <label for="email">mail</label>
+        <input id="email" type="text" name="mail" value=" "> <br> <br>
+        
+        
+        <textarea name="impression" rows="2" cols="50">
+        Donnez vos impressions sur le site...
+        </textarea><br>
+        <input type="submit" value="envoyer le mail">
+        </p>
+    </form>
+
+</body>
+
+</html>
