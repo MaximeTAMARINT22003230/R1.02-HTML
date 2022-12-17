@@ -68,29 +68,31 @@
 
     <!--=====| Formulaire |=====-->
 
-    <form id="form" action="#">
+    <form id="form">
+
         <p>
+
             <label for="prenom">Prénom</label>
-            <input id="prenom" type="text" name="prenom" value=" ">
+            <input id="prenom" type="text" name="prenom" value=" " require>
 
             <label for="nom">Nom</label>
-            <input id="nom" type="text" name="nom" value=" ">
+            <input id="nom" type="text" name="nom" value=" " require>
 
             <select name="sexe">
-                <option>choix</option>
+                <option>choix du sexe: </option>
                 <option>homme</option>
                 <option>femme</option>
+                <option>autre</option>
             </select> <br> <br>
 
-            <label for="email">mail</label>
+            <label for="email">votre mail</label>
             <input id="email" type="text" name="mail" value=" "> <br> <br>
 
-
-            <textarea name="impression" rows="2" cols="50">
-        Donnez vos impressions sur le site...
-        </textarea><br>
+            <p> Donnez vos impressions sur le site:</p>
+            <textarea name="impression" rows="2" cols="50" require> </textarea><br>
             <input type="submit" value="envoyer le mail">
         </p>
+
     </form>
 
 </body>
