@@ -65,30 +65,46 @@
 
     </nav>
 
-    <!--=====| Corp de l'affichage de la page |=====-->
 
-    <h1> Object </h1>
+    <!--=====| Formulaire |=====-->
 
-    <p>
-        insert texte
-    </p>
+    <form id="form" action="#">
 
-    <!--=====| remonter en haut de page |=====-->
+        <p>
 
-    <div class="botButton">
-        <a href="#"><img id="upArrow" src="CSS/fleche.png" alt=""></a>
-    </div>
+            <label for="prenom">Prénom</label>
+            <input id="prenom" type="text" name="prenom" value=" " require>
 
-    <!--=====| Pied de page |=====-->
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" name="nom" value=" " require>
 
-    <!--credit-->
-    <footer>
-        <h6>
-            credit: <a href="https://tiermaker.com/">tiermarker</a> et <a href="https://kineticgames.co.uk/">Phasmophobia</a>
-        </h6>
-    </footer>
+            <select name="sexe">
+                <option>choix</option>
+                <option>homme</option>
+                <option>femme</option>
+            </select> <br> <br>
+
+            <label for="email">mail</label>
+            <input id="email" type="text" name="mail" value=" "> <br> <br>
+
+
+            <textarea name="impression" rows="2" cols="50" require>
+        Donnez vos impressions sur le site...
+        </textarea><br>
+            <input type="submit" value="envoyer le mail">
+        </p>
+
+    </form>
+
+    <?php
+    if (isset($_POST['impression'])) 
+    {
+        $retour = mail('maxtam83390@gmail.com', 'Envoi depuis la page Contact', $_POST['impression'], 'From: webmaster@monsite.fr' . "\r\n" . 'Reply-to: ' . $_POST['email']) //mail("Email du destinataire", "Sujet", "Message", "Entête");
+        if($retour)
+            echo '<p>Votre message a bien été envoyé.</p>';
+    }
+    ?>
 
 </body>
-
 
 </html>
