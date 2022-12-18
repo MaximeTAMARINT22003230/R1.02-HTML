@@ -3,11 +3,10 @@ Corps de page
 */
 
 body {
-    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
+    background-image:
     url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/10/phasmophobia-spirit-box.jpg");
     background-size: cover;
     background-position: center;
-    background-size: 100%;
     background-attachment: fixed;
     padding-top: 65px;
     scroll-behavior: smooth;
