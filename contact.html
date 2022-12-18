@@ -50,10 +50,6 @@
                 <a href="objet.html">Objet</a>
             </li>
 
-            <!--navigation pour onglet Entité (entite.html)-->
-            <li class="nav-item">
-                <a href="entite.html">Entité</a>
-            </li>
 
             <!--navigation pour onglet Contact (contact.html)-->
             <li class="nav-item">
@@ -67,43 +63,52 @@
 
     <!--=====| Formulaire |=====-->
 
-    <form id="form">
+    <!-- Mail de l envoyeur -->
 
-        <p>
+    <section>
+        <form id="form"
+            action="mailto:maxime.tamarin@etu.univ-amu.fr?content-type=text/html&amp;subject=Impression du site"
+            method="post" enctype="text/plain">
 
-            <label for="prenom">Prénom</label>
-            <input id="prenom" type="text" name="prenom" value=" " require>
+            <p>
+                <!--label pour mettre sont prenom -->
 
-            <label for="nom">Nom</label>
-            <input id="nom" type="text" name="nom" value=" " require>
+                <label for="prenom">Prénom</label>
+                <input id="prenom" type="text" name="prenom" value=" " require>
 
-            <select name="sexe">
-                <option>choix du sexe: </option>
-                <option>homme</option>
-                <option>femme</option>
-                <option>autre</option>
-            </select> <br> <br>
+                <!--label pour mettre sont Nom -->
+                <label for="nom">Nom</label>
+                <input id="nom" type="text" name="nom" value=" " require>
 
-            <label for="email">votre mail</label>
-            <input id="email" type="text" name="mail" value=" "> <br> <br>
+                <!--Choisir sont sexe-->
+                <select name="sexe">
+                    <option>choix du sexe: </option>
+                    <option>homme</option>
+                    <option>femme</option>
+                    <option>autre</option>
+                </select> <br> <br>
 
+                <!--Mettre sont commentaire -->
             <p> Donnez vos impressions sur le site:</p>
             <textarea name="impression" rows="2" cols="50" require> </textarea><br>
             <input type="submit" value="envoyer le mail">
-        </p>
+            </p>
 
-    </form>
+        </form>
+    </section>
+
     <footer>
-        <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png" width="20" height="20" alt="image de soleil qui se fait couvrir "></button>
+        <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png" width="20"
+                height="20" alt="image de soleil qui se fait couvrir "></button>
     </footer>
     <script>
         document.querySelector("#theme-B").addEventListener("click", (event) => {
             const theme = document.querySelector("#theme");
-            if (theme.getAttribute("href") === "CSS/style 2.css"){
-                theme.setAttribute("href","CSS/style.css");
+            if (theme.getAttribute("href") === "CSS/style 2.css") {
+                theme.setAttribute("href", "CSS/style.css");
                 return;
             }
-            theme.setAttribute("href","CSS/style 2.css");
+            theme.setAttribute("href", "CSS/style 2.css");
         });
     </script>
 </body>

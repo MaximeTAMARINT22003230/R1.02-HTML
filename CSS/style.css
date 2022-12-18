@@ -3,24 +3,54 @@ Corps de page
 */
 
 body {
-    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
-    url("https://cdn.gamekult.com/images/news/30/3050832991/on-a-frissonne-en-chassant-des-demons-dans-phasmophobia-5cfe30ae.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(77, 77, 77, 0.5)),
+        url("https://cdn.gamekult.com/images/news/30/3050832991/on-a-frissonne-en-chassant-des-demons-dans-phasmophobia-5cfe30ae.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 65px;
     scroll-behavior: smooth;
-    color:white;
-    
+    color: white;
+}
+
+/*
+Mettre le titre en gras
+*/
+h1 {
+
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    width: 88%;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+article {
+    background-color: #000000;
+    width: 88%;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center; 
 }
 
 /*
 Bas de page 
 */
-main{
+main {
     text-align: center;
 
 }
+
 
 footer {
     text-align: center;
@@ -37,6 +67,7 @@ Barre menue
     left: 0;
     background-color: rgb(0, 0, 0);
     width: 100%;
+   padding: 1%;
 }
 
 .navbar img {
@@ -54,10 +85,6 @@ Barre menue
 .dropdown {
     display: none;
 
-}
-
-[id^=btn]:checked+ul {
-    display: block;
 }
 
 .nav-menu {
@@ -97,6 +124,7 @@ Barre menue
         display: inline-block;
         margin-left: 20px;
         position: relative;
+        width: auto;
     }
 
     .dropdown {
@@ -109,35 +137,40 @@ Barre menue
     }
 
 }
+
 /*
-Titre 
+Tableau
 */
 
-h1 {
-  
+table {
+    table-layout: auto;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 200%;
-    line-height: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 125%;
 }
 
-/*
-Sous partie 
-*/
-
-h3 {
- 
-    align-items: center;
-    padding-left: 1%;   
+table tr:nth-child(odd) {
+    background-color: black;
+    text-align: center;
+    empty-cells: hide;
 }
 
-/*
-paragraphe
-*/
+table tr:nth-child(even) {
+    background-color: black;
+    text-align: center;
+    empty-cells: hide;
+}
 
-p {
- 
-    padding-left: auto;
-    padding-right:auto;
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-decoration-color: white;
 }
 
 /*
@@ -152,7 +185,7 @@ a {
 Balise pour remonter en haut de page 
 */
 
-.botButton{
+.botButton {
     height: 100px;
     width: 100px;
     position: fixed;
@@ -160,7 +193,7 @@ Balise pour remonter en haut de page
     bottom: 20px;
 }
 
-#upArrow{
+#upArrow {
     width: 40px;
     height: 40px;
 }
@@ -170,5 +203,11 @@ Commentaire
 */
 
 form {
+    background: #000000;
+    width: 80%;
+    margin: 150px;
+    max-width: 70%;
+    border-radius: 4px;
+    padding: 45px;
     text-align: center;
 }

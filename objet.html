@@ -51,11 +51,6 @@
                 <a href="objet.html">Objet</a>
             </li>
 
-            <!--navigation pour onglet Entité (entite.html)-->
-            <li class="nav-item">
-                <a href="entite.html">Entité</a>
-            </li>
-
             <!--navigation pour onglet Contact (contact.html)-->
             <li class="nav-item">
                 <a href="contact.html">Contact</a>
@@ -66,13 +61,58 @@
     </nav>
 
     <!--=====| Corp de l'affichage de la page |=====-->
+    <main>
+        <h1> Objet </h1>
 
-    <h1> Object </h1>
+            <p>
+                Il y a plusieur équipement à acheter avant de lancer la partie pour reperez le fantome:
+            </p>
 
-    <p>
-        insert texte
-    </p>
+        <section class="container">
+            <table border="2" id="table1">
+                <tr>
+                    <td colspan="4">
+                        <h3 id="titre">Objet</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="table_legende">image</td>
+                    <td id="table_legende">nom</td>
+                    <td id="table_legende">utilisation</td>
+                </tr>
+                <tr>
+                    <td><img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/phasmophobia/f/fa/Spirit_Box.PNG"
+                            width="50" height="60" alt=""></td>
+                    <td>Spiritbox</td>
+                    <td>La Spirit Box est une radio qui permet à l’entité de répondre à certaines questions que lui pose
+                        le joueur qui l’utilise dans sa pièce.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gamesgds.com/wp-content/uploads/2020/10/gamesgds-2020-10-04-29-E.jpg"
+                            width="50" height="60 alt="></td>
+                    <td>thermomètre</td>
+                    <td>Le thermomètre affiche la température à proximité du capteur à l’avant de l’objet.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://media.sketchfab.com/models/5c80552ee74449a88000da76b57522a5/thumbnails/674bd468b9f44e93b1a57309e79c05b0/47e15fcae41e4d9e8c194a3b4361ffcb.jpeg"
+                            width="50" height="60 alt=""></td>
+                <td>EMF</td>
+                <td>Le lecteur EMF (aussi appelé K2) est un petit détecteur de champs électromagnétiques (traces EMF) qui réagit aux diverses interactions de l’entité.</td>
+            </tr>
+            <tr>
+                <td><img src="
+                            data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhESEhAVFRMWFhgVFhYXEhUVGhUSFRIXFxgWFRcYHSggGholGxcVITEhJSkrLi4uGx8zODMtNygtLisBCgoKBQYFDgUPDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAAcBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA8EAACAQIDBgMGBAUCBwAAAAABAgADEQQhMQUGEkFRYQcTcSIyQoGh8FJikdEUI7HB8QjhJENEY3KCsv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDuMREBERAREQEREBERAREQEREBERAREQETVvEHfOns3DmobPWe4o0r+8w1ZrZhFuLnuBqRPM+1tpVMTVOIr1WeqTcuxuRncBPwgcgLAcrQPYMThXg1v+UqNg8bif5TDipVa1QkpUuo8ria/ssMxcgAqfxTtFfa1BKtKg9dFrVQTTQsAzga8I5/3sehgXsREBERAREQEREBERAREQEREBERAREQEREBERAREQEw+9e8dDAYZ8TiGsq5Ko96pUIPDTQc2Nj6AEnIGX21NoUsPSqV6zhKVNSzseQH1J5ADMkgCeVPEbfaptPE+YbpQS60KRPuqdWa2XG1hf5DlAttu7y1cfinxGIPtObKt/Zp0x7lNOwJPqSTqTJsNg0astOrdRU0YGxVvnlmcsxzEsNnYO1nb5D+8zNfDmogtk4zU9xAhtLdOogLUm8xfwnJv2b6ekwj4l8lYtdbKOIm6hfdUXzUA6DlOh7Axor0r6OvsuOjjt0P3pIbU2BTxCkt7NT4XAzHQMPiH2IGa8N/Ftk4MNtFyyaJiTmydBW5sv59RzvmR3Cm4YBlIIIBBBuCDmCDzE8dY/Z1Sg/BVWx1BGjDqp5ids/0/wCMxD0cQj10bD0yq06RPFUpu3tFhn7FIjQG9yGtaxuHW4iICIiAiIgIiICIiAiIgIiICIiAiIgIiICS1HCgsxAABJJNgAMySeQk04P46eIDM77MwzWRcsS4ObtYHyVI0UfF1OWQBuGueLviGdoVTh6DEYOk2XLz3GXmMPw68I+ZzNhpmy8BxWZhlyHWU9mYHjNz7o+pm0UaQAgS0MPzOsqVHtn9Osi7gC8satS5v9iBldzE4nruz2qaGmBYcP4vzZ5dvnNwWcx/i2putSmbOvPkeqkcxN5wO8NBqBrM3Bw5MmrB+ij4gbGx9dLGwZDaOy6eIQpUFxqpGqt+JT93mnbPq4vZeLWrSYK66HPgr0ic0YfhNsxqpsRoDN8wVZaiq6MGRhcEff0kNrbLXEUyjZEZo3NW/bqIG/bJ8RcBWo0arYhKTVDwGm59qnVFgUcjJcyLMbAggibbPK+Io8DNRqLYi6lfvkdZ17wf3tasjYDEPxV6C3pOdauGvYX6smSnqOE5m5gdKiIgIiICIiAiIgIiICIiAiIgIiICImjeKHiDT2ZSCJZ8XUU+VTvkgzHm1Pyg6D4iCORIDBeNPiGMLSbBYStbFvYVWXWhSIvk3w1GytzAJOR4TPPWBoh3VSbX+7SSvWZ3Z3Ys7EszMSSzMbliTqSbm8hRvxLw+9cW9b5QNzw9EKBl/tKjOALmScZsCwsbXOd7HpeWdarxHtAjVq8RlrWrch85CtVtkNZbEwIkyizXMgzXkpMDM7B3gqYZ7r7SH36ZOTfmB+Fu/PvlbpmydsUsQnFSb/yU5Mp6MP76TjErYXGPTYOjFWGjDIjt3HYwN/8AEDDHgWvTW7AhHsPhPum3UHL5zVdl7aqYfE4avSBNem4YAZ8RPstTyzIYErl1m7PtOniMI54wOOkQyhhdXK+72N5ouy9oVMJiaWIUL5lFw6qc1PUHsQSPnA9c4arxoj8LLxKG4WFmW4vZhyIlSYbdDeFMfhaWKpoyB7gq2qujFWAOjC4NiNexuBmYCIiAiIgIiICIiAiIgIiICInLfGTfV6AXZ+FbhxFZOKrUBzpUDcWU8naxF9QO5BAS79eM+HwpqUMGn8RXUlS5ypI4uNdahB5Cw/NPPe1No1cRVetXqtUqubs7G5PbsAMgBkBkJbFbEjpIwIAaTIUVbD1KbOBYjPnYHI/MZSWhs8tSaoDcj4R0Gt+/P/MuzW8+nY+8up/Nyb0P3ygZCriOLTTl3lrWq2yGsx2ExJS6N8u0rkwIkykzXkGa8lJgCZLEhASIMSNoFSlVIIYajQzou4W4lXajLWqg0sEuXHo9Y3zWkfwg3BfQZgXN+G88L/CxsTwYvHIVw+TU6RurVxyZ+a0/q3YWLd8o0lVVVVCqoCqoAAVQLAADQAcoFHZ2Ap0KSUaNNadJBwqiiwA/fnfUnOXMRAREQEREBERAREQEREBERAlqVAoLMQFAJJJsAALkk9J5e3q2+mLxmIxiAhKjjh4tfLpKKa+lwnFbkWM7r4tbQ8jZGObm1Pyh385hSP0Yn5Typh2duGmM7aD53uYFbbVMCqxGje1+uv1vLjZOAvZ3GXwg8+57SvjsNkrHOwAP72lb+K4lFvnAxyv5NRlv/LY/TkfloZJiVNN+NdOY9eXpLjGIGFufLtLOjVI9hvQenT0gTVkDjiBz+8jIrewBN5BEAvaCYAmQiUHc8oFaRlJavaXtHBVGqLSSmzVGICoo4mZjoABz7QKKr010659BO3eF/hTw8GL2jT9rJqWGYX4ej1xzbonLnnkuZ8MPDBcGFxOLCvi9VX3kw/odGqdW0Gg6npkBERAREQEREBERAREQEREBERARE5j4w+I4wKHCYZr4youbD/p6bfEf+4R7o5e8eXEGif6g95/OxVPB06galhxxVApy/iWJBDciVSw7FmGs5jszE8Di+hyP7y1diSSSSSbknMknmTIQNjxFW9xy/rMelSxNtJRo1iygHl9ZUUQJy3OU2MmdcrymTAiTJYkICQFK5AAuToBzk9OmWICi5M2HdbdyvjK38PhF4nt/NrG4Skh5luQ17tygWWxtkVatZKGGpmriXyAGiDmb6C3NjkJ6K8OfDyls1PMciri2Ht1bZKDqlK+YXq2rc7CwGR3H3Lw+zaPBSHHVa3m1mADVCP8A5QclGnc3J2WAiIgIiICIiAiIgIiICIiAiIgIiat4g77UdmYfzH9us9xRpXsXYak9EFxc9wNTAtfFHfddmYUMoDYiqSlFToCB7VRuqrcZcyVHMkeV8bi3q1Hq1XL1HYs7MblmJuSZk96t6MTtCt52KqBmA4VVVCqiXJ4VA7nU3PUzDwJYk1pCBdUCLdv6SvTcE2vaY8EiIGRq1eQ0lK19P0lulXrKwMCJEnoUSxsB3J5AdSekp3l3s2nUqOKVFC9Sp7CoouzX6D5a+sC82Ps98RWpYTDgl6rBb6FzqSTnwoACTrkCc9J6h3K3Yp7PwqYdCGa5ao/CFL1GOZIHIZAXJNgMzNY8LfDcbP8A+JxBD4tltYe5QRrXRT8Tm2bfIZXLdFgIiICIiAiIgIiICIiAiIgIiICIlLFYlKaPUqOERFLMzGwVVFySeQtAsN5N4MPgaDYjE1OBFyHNnc6Ii/ExscuxJsATPKm/+87bRxtXEkEIbJSQ2ulFfdBtzJLMe7GXfiXvm+0sWz3Iw9MlcOnRL++R+NrAnpkOU1k4VuDj5Zfoef8ASBQEjFrGXbUwwBXIfeUC1kLSsaHeS+UYFOLSp5RlTD4V3ZURGd2IVVUFmZjkAoGZMCgptqLzct0/D3H7QTzKFIJSvYVKrFFbrwZEsB1AtOt+F/hVTwiriMai1MURcUzZ0oA8ujVOraDQdT1ECBxndfwLCOlTH4kVQMzRpBgrHoapIYr2Cg951XZOwcLhgRhsLSo31KU1Un1IFz85kogIiICIiAiIgIiICIiAiIgIiICImp+I2+1PZmH4zZ673FGkT7zAZs1s+BcifkOcDPbY2xQwtM1sTWSlTHxMbXPRRqx7C5nnDxQ8QKm06xo0Cy4JD7IzHmkf82oNbdFOnrpp+1tsYnHVjUxFZ6rkk+0TZATmEXRF7CwlxQwwUQMTiqHCQOovK+Dr5cB+x0/qZd42lxLbmNPpcfeUxZQiBXqUv89ZTVivpJ0rX116ftJiIEA94kppy+2NsitiaqUMOjVKrmwUfUsTkqjmTpAbK2ZWxNVaOHpNVqtoii5t1JOSqOZNgJ6O8NfDmls5RVq8NTGMPafVaQIzSlf9C2p7DKZrcPdZNnYSnh1IZ/eq1ALcdVsyevCNBfkBNigIiICIiAiIgIiICIiAiIgIiICIiAiIgWm1tpUsNRq4is4SlTUszHkByHUk2AGpJAnlbevbdTHVMRi6x9pzZUvcU6XEoSmvYAt6lmPObD4zb8NjMWcJRqA4Sg4F1JIrVQBxOTzCniUWuMibm4tpgPsFfxZfTX9RAtNnDhcD8QI+Ysf6XmQd/u/3na+fKY+pmFI94aeo5ScV+IX/AF9en31gT1H+/wBv1+kt3zkWaSEwKb0oAaVBNj3K3OxG0q3l0Rw01t5tZlutJfT4nPJRrzsLmBb7nbs19oYhMPRFhkalSxK0qd83bvrYczl3Hp/djdPCYBCuFohS1uNyS7vbTids7dhkLnLOT7rbt4fAUFoYdLDVmNi9R+bueZ+g0AAmYgIiICIiAiIgIiICIiAiIgIiICIiAiIgJq3ijtJsPsrHVVJDeV5YIuCDWdaVwRoRx3m0zWvEjZZxOzMbRVeJjSLqOr0iKigdyUEDyRTqWtlzF++cyVZ7y0ekDobyFN+R5QKhP+/7ykw5j/MmvFoEvH1y9f3k0Ad5XwWDerUSlSQvUc8KqouWY8gBAyW5+wjjcZh8KCQKj+2wtdaSgs7C+V+EG1+ZE9W7E2PRwlFKGHphKa6AczzZjqzHmTNN8KvD0bORq1chsXUWxtmtGnr5anmSQCzdgBkLnoMBERAREQEREBERAREQEREBERAREQEREBERAREQPP3j3sJaOLpYmnRZUrpw1HAHlmsmSgWN1fgGYIAIGVyGtywz2VtTZtLEUno16S1KTizIwuD0PYg5gjMHMTiW9fghWVmfZ9UVEJJFGqeF17LU91v/AGt6mByAmLzoFLwe2mcO9ZkRHUm1AuGqOAbEqVuvWwvnbuJd7t+DWOrODieHC0r53ZXqMv5EQkD1Yi3QwNQ3R3XxG0K4o4ddLGpUN+Ckh+Jz+thqfkSPSW5m4uE2co8qnxVuGz13F3bqB+Bb/CuWl7nOZTdvd/D4GgtDDUwiDMnVnc6u7asx/YCwAEykBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/Z"
+                            width="50" height="60" alt=""></td>
+                    <td>lampe UV</td>
+                    <td>La lampe UV peut révéler les empreintes digitales et les empreintes de pas laissées par l’entité
+                        avec sa lumière ultra-violette.</td>
+                </tr>
+            </table>
+            <br>
+        </section>
 
+
+    </main>
     <!--=====| remonter en haut de page |=====-->
 
     <div class="botButton">
@@ -84,18 +124,20 @@
     <!--credit-->
     <footer>
         <h6>
-            credit: <a href="https://tiermaker.com/">tiermarker</a> et <a href="https://kineticgames.co.uk/">Phasmophobia</a>
+            credit: <a href="https://tiermaker.com/">tiermarker</a> et <a
+                href="https://kineticgames.co.uk/">Phasmophobia</a>
         </h6>
-        <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png" width="20" height="20" alt="image de soleil qui se fait couvrir "></button>
+        <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png" width="20"
+                height="20" alt="image de soleil qui se fait couvrir "></button>
     </footer>
     <script>
         document.querySelector("#theme-B").addEventListener("click", (event) => {
             const theme = document.querySelector("#theme");
-            if (theme.getAttribute("href") === "CSS/style 2.css"){
-                theme.setAttribute("href","CSS/style.css");
+            if (theme.getAttribute("href") === "CSS/style 2.css") {
+                theme.setAttribute("href", "CSS/style.css");
                 return;
             }
-            theme.setAttribute("href","CSS/style 2.css");
+            theme.setAttribute("href", "CSS/style 2.css");
         });
     </script>
 </body>

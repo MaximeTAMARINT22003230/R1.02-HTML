@@ -4,20 +4,47 @@ Corps de page
 
 body {
     background-image: linear-gradient(rgba(31, 29, 29, 0.5), rgba(36, 35, 35, 0.5)),
-    url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/10/phasmophobia-spirit-box.jpg");
+        url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/10/phasmophobia-spirit-box.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 65px;
     scroll-behavior: smooth;
     color: red;
-    
+
+}
+
+h1 {
+
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    width: 88%;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+article {
+    background-color: #000000;
+    width: 88%;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center; 
 }
 
 /*
 Bas de page 
 */
-main{
+main {
     text-align: center;
 
 }
@@ -37,6 +64,7 @@ Barre menue
     left: 0;
     background-color: rgb(0, 0, 0);
     width: 100%;
+    padding: 1%;
 }
 
 .navbar img {
@@ -56,10 +84,6 @@ Barre menue
 
 }
 
-[id^=btn]:checked+ul {
-    display: block;
-}
-
 .nav-menu {
     background-color: rgb(0, 0, 0);
     position: absolute;
@@ -72,7 +96,7 @@ Barre menue
 .nav-item a,
 .drop-item a,
 .show {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     line-height: 25px;
     font-size: 150%;
@@ -80,7 +104,7 @@ Barre menue
 
 .nav-menu a:hover,
 .show:hover {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 @media screen and (min-width: 768px) {
@@ -109,35 +133,40 @@ Barre menue
     }
 
 }
+
 /*
-Titre 
+Tableau
 */
 
-h1 {
-
+table {
+    table-layout: auto;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 200%;
-    line-height: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 125%;
 }
 
-/*
-Sous partie 
-*/
-
-h3 {
- 
-    align-items: center;
-    padding-left: 1%;   
+table tr:nth-child(odd) {
+    background-color: black;
+    text-align: center;
+    empty-cells: hide;
 }
 
-/*
-paragraphe
-*/
+table tr:nth-child(even) {
+    background-color: black;
+    text-align: center;
+    empty-cells: hide;
+}
 
-p {
- 
-    padding-left: auto;
-    padding-right:auto;
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-decoration-color: white;
 }
 
 /*
@@ -145,14 +174,14 @@ Ancrage des lien
 */
 
 a {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 /* 
 Balise pour remonter en haut de page 
 */
 
-.botButton{
+.botButton {
     height: 100px;
     width: 100px;
     position: fixed;
@@ -160,15 +189,21 @@ Balise pour remonter en haut de page
     bottom: 20px;
 }
 
-#upArrow{
+#upArrow {
     width: 40px;
     height: 40px;
 }
 
 /*
-Commentaire
+formulaire
 */
 
 form {
+    background: #000000;
+    width: 80%;
+    margin: 150px;
+    max-width: 70%;
+    border-radius: 4px;
+    padding: 45px;
     text-align: center;
 }
