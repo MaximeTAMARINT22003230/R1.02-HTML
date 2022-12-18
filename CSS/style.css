@@ -83,7 +83,8 @@ Barre menue
     left: 0;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .navbar img {
