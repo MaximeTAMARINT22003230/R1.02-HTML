@@ -12,8 +12,7 @@
     <meta name="author" content="Maxime TAMARIN et Axel ROUBAUD">
 
     <!--utilisation du fichier CSS-->
-    <link rel="stylesheet" href="CSS/style.css">
-
+    <link id="theme" rel="stylesheet" href="CSS/style.css">
     <!--insertion du favicon-->
     <link rel="icon" href="phasmo.ico">
 
@@ -94,7 +93,19 @@
         </p>
 
     </form>
-
+    <footer>
+        <button id="theme-B" type="button"><img src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png" width="20" height="20" alt="image de soleil qui se fait couvrir "></button>
+    </footer>
+    <script>
+        document.querySelector("#theme-B").addEventListener("click", (event) => {
+            const theme = document.querySelector("#theme");
+            if (theme.getAttribute("href") === "CSS/style 2.css"){
+                theme.setAttribute("href","CSS/style.css");
+                return;
+            }
+            theme.setAttribute("href","CSS/style 2.css");
+        });
+    </script>
 </body>
 
 </html>
