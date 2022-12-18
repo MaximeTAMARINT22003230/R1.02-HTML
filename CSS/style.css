@@ -27,21 +27,37 @@ h1 {
     border-radius: 5px;
     padding: 1%;
     text-align: center;
+    border: 2px solid white;
 }
 
+/*
+Sous partie
+*/
 h3 {
     text-decoration: underline;
     font-style: italic;
 }
 
+/*
+cadre de texte 
+*/
 article {
     background-color: #000000;
     width: 88%;
     margin: 5%;
     border-radius: 5px;
     padding: 1%;
-    text-align: center; 
+    text-align: center;
+    border: 2px solid white;
 }
+
+/*
+contour du iframe
+*/
+iframe {
+    border: 2px solid white;
+}
+
 
 /*
 Bas de page 
@@ -67,7 +83,7 @@ Barre menue
     left: 0;
     background-color: rgb(0, 0, 0);
     width: 100%;
-   padding: 1%;
+    padding: 1%;
 }
 
 .navbar img {
@@ -151,19 +167,22 @@ table {
     margin-left: 2px;
     margin-right: 2px;
     font-size: 125%;
+    border: 2px solid white;
+    border-collapse: collapse;
+
 }
 
-table tr:nth-child(odd) {
-    background-color: black;
-    text-align: center;
-    empty-cells: hide;
+table td {
+    border: 2px solid white;
 }
 
+table tr:nth-child(odd),
 table tr:nth-child(even) {
     background-color: black;
     text-align: center;
     empty-cells: hide;
 }
+
 
 .container {
     display: flex;
@@ -210,4 +229,5 @@ form {
     border-radius: 4px;
     padding: 45px;
     text-align: center;
+    border: 2px solid white;
 }
