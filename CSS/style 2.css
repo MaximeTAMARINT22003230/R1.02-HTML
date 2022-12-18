@@ -4,12 +4,13 @@ Corps de page
 
 body {
     background-image:
-    url("https://cdn.gamekult.com/images/news/30/3050832991/on-a-frissonne-en-chassant-des-demons-dans-phasmophobia-5cfe30ae.jpg");
+    url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2020/10/phasmophobia-spirit-box.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 65px;
     scroll-behavior: smooth;
+    color: red;
     
 }
 
@@ -23,7 +24,6 @@ main{
 
 footer {
     text-align: center;
-    color: white;
     font-size: 80%;
 }
 
@@ -83,7 +83,7 @@ Barre menue
     color: red;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .icon {
         display: none;
     }
@@ -114,7 +114,7 @@ Titre
 */
 
 h1 {
-    color: white;
+
     align-items: center;
     font-size: 200%;
     line-height: 25px;
@@ -125,7 +125,7 @@ Sous partie
 */
 
 h3 {
-    color: white;
+ 
     align-items: center;
     padding-left: 1%;   
 }
@@ -135,7 +135,7 @@ paragraphe
 */
 
 p {
-    color: white;
+ 
     padding-left: auto;
     padding-right:auto;
 }
