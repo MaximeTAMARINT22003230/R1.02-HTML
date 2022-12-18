@@ -3,13 +3,14 @@ Corps de page
 */
 
 body {
-    background-image:
+    background-image: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)),
     url("https://cdn.gamekult.com/images/news/30/3050832991/on-a-frissonne-en-chassant-des-demons-dans-phasmophobia-5cfe30ae.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 65px;
     scroll-behavior: smooth;
+    color:white;
     
 }
 
@@ -23,7 +24,6 @@ main{
 
 footer {
     text-align: center;
-    color: white;
     font-size: 80%;
 }
 
@@ -114,7 +114,7 @@ Titre
 */
 
 h1 {
-    color: white;
+  
     align-items: center;
     font-size: 200%;
     line-height: 25px;
@@ -125,7 +125,7 @@ Sous partie
 */
 
 h3 {
-    color: white;
+ 
     align-items: center;
     padding-left: 1%;   
 }
@@ -135,7 +135,7 @@ paragraphe
 */
 
 p {
-    color: white;
+ 
     padding-left: auto;
     padding-right:auto;
 }
