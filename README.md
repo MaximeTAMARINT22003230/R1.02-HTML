@@ -5,4 +5,4 @@ auteur du projet:
 TAMARIN Maxime
 ROUBAUD Axel
 
-site: https://max-tam.github.io/R1.02-HTML/
+site: https://maximetamarint22003230.github.io/R1.02-HTML/
